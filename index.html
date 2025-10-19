@@ -2,10 +2,97 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Benim İlk Sitem</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>e-Helper | Yardımcı Teknolojiler</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #004aad;
+      color: white;
+      padding: 20px 0;
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 40px auto;
+      max-width: 900px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      width: 350px;
+      text-align: left;
+    }
+
+    .card h2 {
+      color: #004aad;
+    }
+
+    .download-section {
+      margin-top: 40px;
+    }
+
+    .download-btn {
+      background-color: #004aad;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 10px;
+      font-size: 1em;
+      transition: 0.3s;
+    }
+
+    .download-btn:hover {
+      background-color: #0074ff;
+    }
+
+    footer {
+      background-color: #004aad;
+      color: white;
+      padding: 15px 0;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
-<body style="text-align:center; font-family:sans-serif;">
-  <h1>Merhaba! 👋</h1>
-  <p>Bu benim GitHub Pages ile yaptığım ilk web sitem!</p>
+<body>
+  <header>e-Helper</header>
+
+  <div class="container">
+    <div class="card">
+      <h2>e-Helper Hakkında</h2>
+      <p>e-Helper, kullanıcıların bilgisayarlarını daha güvenli ve verimli kullanmalarını sağlamak için geliştirilmiş yardımcı bir yazılım platformudur.</p>
+    </div>
+
+    <div class="card">
+      <h2>Nasıl Çalışır?</h2>
+      <p>Kurulumdan sonra sisteminizle entegre olarak çalışır, kullanıcı dostu bir arayüzle gerekli araçları sunar. Güncellemelerle sürekli gelişir.</p>
+    </div>
+  </div>
+
+  <div class="download-section">
+    <h2>Yükleme Seçenekleri</h2>
+    <button class="download-btn" onclick="window.location.href='usbkey_setup.exe'">Windows 10 için USBKey indir</button>
+    <button class="download-btn" onclick="window.location.href='ekilit_setup.exe'">Windows 10 için e-Kilit indir</button>
+  </div>
+
+  <footer>© 2025 e-Helper | Tüm hakları saklıdır.</footer>
 </body>
 </html>
