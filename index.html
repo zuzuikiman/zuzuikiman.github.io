@@ -5,9 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>e-Helper</title>
   <style>
-    body {
+    html, body {
+      height: 100%; /* Tam yükseklik */
       margin: 0;
       padding: 0;
+      display: flex;
+      flex-direction: column; /* İçeriği dikey sırala */
       background-color: #0d1117;
       color: #e6edf3;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -24,6 +27,7 @@
     }
 
     .main {
+      flex: 1; /* Footer’ı en alta itmek için */
       margin-top: 80px;
     }
 
@@ -55,8 +59,14 @@
       transform: scale(1.05);
     }
 
+    .footer-text {
+      background-color: #161b22;
+      color: #8b949e;
+      padding: 10px;
+      font-size: 0.95em;
+    }
+
     footer {
-      margin-top: 80px;
       background-color: #161b22;
       color: #8b949e;
       padding: 15px;
@@ -75,6 +85,9 @@
       <a href="ekilit_setup.exe" class="download-btn">Windows 10 için e-Kilit indir</a>
     </div>
   </div>
+
+  <!-- Footer üstüne ekstra yazı -->
+  <div class="footer-text">Kapıdaki kilidi kıran güç kas gücü değil, beyin gücüdür. e-Helper</div>
 
   <footer>© 2025 e-Helper | Tüm hakları saklıdır.</footer>
 </body>
